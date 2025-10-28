@@ -38,7 +38,9 @@
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -r git@github.com:Forever-xl/Forever-xl.github.io.git -b main"
   },
   "eslintConfig": {
     "extends": [
@@ -69,6 +71,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-jest": "^24.7.0",
+    "gh-pages": "^6.3.0",
     "husky": "^9.1.7",
     "prettier": "3.6.2"
   },
