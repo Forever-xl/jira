@@ -24,7 +24,7 @@ import { UserPopover } from "components/user-popover";
  *
  */
 
-export default () => {
+export default function AuthenticatedApp() {
   return (
     <Container>
       <PageHeader />
@@ -38,7 +38,7 @@ export default () => {
       <ProjectModal />
     </Container>
   );
-};
+}
 
 const PageHeader = () => {
   return (
